@@ -34,3 +34,8 @@
 # Вывод
 # стандартный вывод или output.txt
 
+cost = input()
+weight = input()
+cash = input()
+
+print(int(cash) - int(cost) * int(weight))
