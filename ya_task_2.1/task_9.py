@@ -35,6 +35,26 @@
 
 while True:
     try:
-        N = input()
-        M = input()
+        nnn = int(input())
+        mmm = int(input())
+        print(nnn)
+        print(mmm)
 
+        if(nnn >= 1 and mmm >= 1):
+            res = nnn*mmm
+            print(int(res / 2))
+        
+    except BaseException:
+        print("exit with exception . . . ")
+    
+    except KeyboardInterrupt:
+        print("exit with exception KeyboadInterrapt ")
+    
+    except Exception:
+        print("whats thats the exception??? . . . ")
+    
+    else:
+        print("Всё хорошо")
+    
+    finally:
+        print("Всё закрыто, пока!")
