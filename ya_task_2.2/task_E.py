@@ -33,3 +33,27 @@
 # Петя
 
 
+PetyaN = int(input())
+VasyaM = int(input())
+
+petya_1st = 7
+vasya_1st = 6
+
+# Петя отдал 3 яблока Васе
+# -3
+# у Толи взял 2 яблока
+# +2
+# Дима дал Пете N яблока
+petya_2nd = 7 - 3 + 2 + PetyaN
+
+# Вася взял 3 яблока у Пети
+# +3
+# Вася взял 3 яблока у Толи
+# +3
+# Дима дал Васе M яблок
+vasya_2nd = 6 + 3 + 3 + VasyaM
+
+if petya_2nd > vasya_2nd:
+    print("Петя")
+else:
+    print("Вася")

@@ -28,34 +28,10 @@
 # Вывод
 # Вася
 
-
-def ascii_name(name_t):
-    sum_t = 0
-    for ind in name_t:
-        sum_t = sum_t + ord(ind)
-    
-    # print(f"summa \"{name_t}\" = {sum_t}")
-
-def compare_ascii_name(sum_1, sum_2, sum_3):
-    if (sum_1 < sum_2):
-        if(sum_1 < sum_3):
-            return name_1
-        
-    elif (sum_2 < sum_1):
-        if(sum_2 < sum_3):
-            return name_2
-        
-    elif (sum_3 < sum_1):
-        if(sum_3 < sum_2):
-            return name_3
-
-
 name_1 = input()
 name_2 = input()
 name_3 = input()
 
-summa_1 = ascii_name(name_1)
-summa_2 = ascii_name(name_2)
-summa_3 = ascii_name(name_3)
+min_name = min(name_1, name_2, name_3)
 
-print(compare_ascii_name(name_1, name_2, name_3))
+print(min_name)
